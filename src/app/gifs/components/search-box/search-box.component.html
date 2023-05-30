@@ -1,0 +1,8 @@
+<h5>Buscar</h5>
+
+<input type="text" class="form-control" placeholder="Buscar gifs..."
+(keyup.enter)="searchTag()" #txtTagInput>
+<!-- para el evento keyup, si le añado .enter, es decir keyup.enter, el evento solo sera disparado
+cuando presione enter -->
+<!-- #txtTagInput, se conoce como una referencia local, puede tener cualquier nombre,
+sirve para conocer el valor que llamo en la funcion y solo se puede utilizar en el template -->

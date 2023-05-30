@@ -1,0 +1,13 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+<h3 class="text-light">GifsApp</h3>
+<hr class="text-white">
+
+<div class="list-group list-reset">
+  <button *ngFor="let tag of tags" class="list-group-item list-group-item-action" (click)="searchTag(tag)">
+    <!-- el | pipe es una propiedad de angular que me permite modificar el elemento de manera visual sin mutar la data real
+    en este caso lo agregaremos para que la información en el buscador la inserto como hola mundo, su resultado sea Hola Mundo, es decir
+  con las primeras letras capitalizadas  -->
+  {{tag | titlecase}}
+</button>
+</div>
+</div>
